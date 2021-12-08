@@ -1,0 +1,56 @@
+[debug] [2021-11-26T09:50:59.481Z] ----------------------------------------------------------------------
+[debug] [2021-11-26T09:50:59.494Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-11-26T09:50:59.496Z] CLI Version:   9.22.0
+[debug] [2021-11-26T09:50:59.497Z] Platform:      win32
+[debug] [2021-11-26T09:50:59.498Z] Node Version:  v13.14.0
+[debug] [2021-11-26T09:50:59.500Z] Time:          Fri Nov 26 2021 15:20:59 GMT+0530 (India Standard Time)
+[debug] [2021-11-26T09:50:59.501Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-26T09:50:59.502Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-11-26T09:50:59.605Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-26T09:50:59.605Z] > authorizing via signed-in user (kirti.gaba@velocitai.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DELL\Desktop\synceed-master
+
+[debug] [2021-11-26T09:51:00.700Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-11-26T09:51:00.700Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-11-26T09:51:15.870Z] > refreshing access token with scopes: []
+[debug] [2021-11-26T09:51:15.885Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-26T09:51:16.190Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 26 Nov 2021 09:51:29 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-26T09:51:16.269Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-11-26T09:51:17.245Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-11-26T09:51:17.245Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project synceedus (synceedus) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-11-26T09:52:33.327Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-11-26T09:52:33.561Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-11-26T09:52:33.561Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.5.0","browserURL":"https://www.gstatic.com/firebasejs/9.5.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.5.0/firebase.tgz"},"live":{"version":"9.5","browserURL":"https://www.gstatic.com/firebasejs/live/9.5/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.5/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.5.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.5.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.5.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.5.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.5.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.5.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.5.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.5.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.5.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] i  Writing gitignore file to .gitignore... 
+[info] 
+[info] +  Firebase initialization complete! 
